@@ -1,7 +1,39 @@
 body {
-    background: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #333;
 }
 
-img {
-    width: 150px;
+nav {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.content {
+    padding: 20px;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto {
+    width: 140px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
 }
