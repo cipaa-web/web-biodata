@@ -32,19 +32,11 @@ nav a:hover {
 }
 
 .foto {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    margin-right: 50px;
-}
-
-.gambar {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 100px;
-    margin: 100px 0;
+    margin-bottom: 15px;
 }
 
 .profil {
@@ -53,33 +45,47 @@ nav a:hover {
     gap: 20px;
 }
 
-.profil img {
-    width: 140px;
-    height: auto;
-    display: block;
-    flex-shrink: 0;
+.artikel {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 0 20px;  
+    gap: 20px;        /* jarak antara teks dan gambar */
+}
+@media (max-width: 768px) {
+    .artikel {
+        flex-direction: column;
+        padding: 0 15px;  /* jarak lebih nyaman di layar kecil */
+    }
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px 0 60px; /* atas 0, kanan 20px, bawah 0, kiri 60px */
+    text-align: left;
+    line-height: 1.8;
 }
 
 
+.gambar {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* gambar khusus halaman sekolah (artikel berita) */
 .gambar-artikel {
-    width: 260px;
-    height: 300px;
+    width: 300px;
+    height: auto;
     border-radius: 0;
-    margin-left: 60px;
-}   
-  
+    margin-left: 20px;
+}
+
 footer {
     text-align: center;
     padding: 15px;
     border-top: 1px solid #ddd;
     color: gray;
-}
-
-img {
-    display: block !important;
-    width: 160px !important;
-    height: auto !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    border: 2px solid red;
 }
