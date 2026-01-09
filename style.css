@@ -1,23 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
     color: #333;
 }
 
 nav {
+    background-color: #f5f5f5;
     padding: 15px;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
 nav a {
-    margin-right: 15px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #000;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .content {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.gambar {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 100px;
+    margin: 100px 0;
 }
 
 .profil {
@@ -26,14 +53,33 @@ nav a {
     gap: 20px;
 }
 
-.foto {
+.profil img {
     width: 140px;
     height: auto;
+    display: block;
+    flex-shrink: 0;
 }
 
+
+.gambar-artikel {
+    width: 260px;
+    height: 300px;
+    border-radius: 0;
+    margin-left: 60px;
+}   
+  
 footer {
     text-align: center;
-    padding: 20px;
-    color: #777;
-    font-size: 14px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    color: gray;
+}
+
+img {
+    display: block !important;
+    width: 160px !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    border: 2px solid red;
 }
